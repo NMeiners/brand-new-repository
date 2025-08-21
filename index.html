@@ -19,9 +19,13 @@
     <button type="button" onclick="generate()">Generate</button>
     <script>
         function generate(){
-          var range = document.getElementById("range");
-          var min = parseInt(range.elements[0].value);
-          var max = parseInt(range.elements[1].value);
+          try {
+            var range = document.getElementById("range");
+            var min = parseInt(range.elements[0].value);
+            var max = parseInt(range.elements[1].value);
+          } catch (err) {
+
+          }
         }
       </script>
   </body>
