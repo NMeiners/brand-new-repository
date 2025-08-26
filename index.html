@@ -17,20 +17,21 @@
       <input type="number" id="max" name="max"><br><br>
     </form>
     <!--generate button-->
-    <button type="button" onclick="generate
-      (document.getElementById('min').value, document.getElementById('max').value, 'output')">
+    <button type="button" onclick="document.getElementById('output').innerHTML =
+      generate(document.getElementById('min').value, document.getElementById('max').value, 'output')">
       Generate</button>
     <p id="output"></p>
     <script>
-        function generate(min, max, outputID){
-          cont output = document.getElementById(outputID);
-          output.innerHTML = "";
+        function generate(min, max){
+          let output = "";
           try {
             if (!Number.isInteger(min)) throw "The mimimum must be an integer.";
             if (!Number.isInteger(max)) throw "The maximum must be an integer.";
-            output.innerHTML = Math.floor(Math.random() * (max - min)) + min;
+            output = Math.floor(Math.random() * (max - min)) + min;
           } catch (err) {
-            output.innerHTML = err;
+            output = err;
+          } finally {
+          return output;
           }
         }
       </script>
