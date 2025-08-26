@@ -29,6 +29,7 @@
           try {
             if (!(Number.isInteger(min))) throw "The mimimum must be an integer.";
             if (!(Number.isInteger(max))) throw "The maximum must be an integer.";
+            if (min > max) throw "The mimimum must be less than the maximum.";
             output = String(Math.floor(Math.random() * (max - min)) + min);
           } catch (err) {
             output = err;
