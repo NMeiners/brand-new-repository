@@ -42,7 +42,8 @@
           }
         }
         function updateHistory(entry){
-          if (!(isNaN(entry)) document.getElementById("history").innerHTML += String(entry) + "\n";
+          const history = document.getElementById("history");
+          if (!(isNaN(entry)) history.innerHTML += String(entry) + "\n";
         }
       </script>
   </body>
