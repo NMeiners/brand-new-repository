@@ -17,10 +17,14 @@
       <input type="number" id="max" name="max"><br><br>
     </form>
     <!--generate button-->
-    <button type="button" onclick="document.getElementById('output').innerHTML =
-      generate(document.getElementById('min').value, document.getElementById('max').value)">
+    <button type="button" onclick="
+      document.getElementById('output').innerHTML =
+      generate(document.getElementById('min').value, document.getElementById('max').value);
+      updateHistory(getElementById('output').value)">
       Generate</button>
     <p id="output"></p>
+    <h3>History</h3>
+    <p id="history"></p>
     <script>
         function generate(minimum, maximum){
           var min = Number(minimum)
@@ -36,6 +40,9 @@
           } finally {
             return output;
           }
+        }
+        function updateHistory(entry){
+          if (!(isNaN(entry)) document.getElementById("history").innerHTML += String(entry) + "\n";
         }
       </script>
   </body>
