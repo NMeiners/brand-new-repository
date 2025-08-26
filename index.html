@@ -6,6 +6,7 @@
   </head>
   <body>
     <h1>CS 39AF - Nathan Meiners Web page Project</h1>
+    <a href="https://github.com/NMeiners/brand-new-repository">Click here to visit the repository.</a>
     <h3>Select range</h3>
     <form id="range">
       <!-- minimum input-->
@@ -16,15 +17,20 @@
       <input type="number" id="max" name="max"><br><br>
     </form>
     <!--generate button-->
-    <button type="button" onclick="generate()">Generate</button>
+    <button type="button" onclick="generate
+      (document.getElementById('min').value, document.getElementById('max').value, 'output')">
+      Generate</button>
+    <p id="output"></p>
     <script>
-        function generate(){
+        function generate(min, max, outputID){
+          cont output = document.getElementById(outputID);
+          output.innerHTML = "";
           try {
-            var range = document.getElementById("range");
-            var min = parseInt(range.elements[0].value);
-            var max = parseInt(range.elements[1].value);
+            if (!Number.isInteger(min)) throw "The mimimum must be an integer.";
+            if (!Number.isInteger(max)) throw "The maximum must be an integer.";
+            output.innerHTML = Math.floor(Math.random() * (max - min)) + min;
           } catch (err) {
-
+            output.innerHTML = err;
           }
         }
       </script>
