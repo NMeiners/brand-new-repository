@@ -22,7 +22,9 @@
       Generate</button>
     <p id="output"></p>
     <script>
-        function generate(min, max){
+        function generate(minimum, maximum){
+          let min = parseInt(minimum)
+          let max = parseInt(maximum)
           let output = "";
           try {
             if (!Number.isInteger(min)) throw "The mimimum must be an integer.";
