@@ -23,17 +23,17 @@
     <p id="output"></p>
     <script>
         function generate(minimum, maximum){
-          let min = Number(minimum)
-          let max = Number(maximum)
+          var min = Number(minimum)
+          var max = Number(maximum)
           let output = "";
           try {
-            if (!Number.isInteger(min)) throw "The mimimum must be an integer.";
-            if (!Number.isInteger(max)) throw "The maximum must be an integer.";
-            output = Math.floor(Math.random() * (max - min)) + min;
+            if (!(Number.isInteger(min))) throw "The mimimum must be an integer.";
+            if (!(Number.isInteger(max))) throw "The maximum must be an integer.";
+            output = String(Math.floor(Math.random() * (max - min)) + min);
           } catch (err) {
             output = err;
           } finally {
-          return output;
+            return output;
           }
         }
       </script>
