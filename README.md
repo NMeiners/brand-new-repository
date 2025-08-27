@@ -1,10 +1,11 @@
 Author: Nathan Meiners
+
 Overview:
-   The page contains a basic random number generator that
-   generates a number within the user's selected range.
+	The page contains a basic random number generator that
+	generates a number within the user's selected range.
    
 Functionality:
-   A link to the repository is included and styled for visibility.
+	A link to the repository is included and styled for visibility.
    
    The user must select a minimum and maximum range.
    
