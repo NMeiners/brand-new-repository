@@ -3,6 +3,12 @@
     <title>Random Number Generator</title>
     <!-- Replace the content in the following line with your name. -->
     <meta name="author" content="Nathan Meiners">
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+    </style>
   </head>
   <body>
     <h1>CS 39AF - Nathan Meiners Web page Project</h1>
@@ -22,8 +28,7 @@
       generate(document.getElementById('min').value, document.getElementById('max').value)">
       Generate</button>
     <p id="output"></p>
-    <h3>History</h3>
-    <p id="history"></p>
+
     <script>
         function generate(minimum, maximum){
           var min = Number(minimum)
