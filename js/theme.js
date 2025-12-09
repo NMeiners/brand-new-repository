@@ -1,6 +1,6 @@
 (function () {
   const THEME_KEY = "glh-theme";
-    const themeMap = {
+  const themeMap = {
     light: "css/theme-light.css",
     earthy: "css/theme-earthy.css",
     blueWhite: "css/theme-blue-white.css",
