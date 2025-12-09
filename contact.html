@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact – Greenline Homes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link id="themeStylesheet" rel="stylesheet" href="css/theme-light.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-mark">GH</span>
+      <div class="brand-text">
+        <span class="brand-name">Greenline Homes</span>
+        <span class="brand-tagline">Custom Home Construction</span>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </nav>
+    <div class="theme-switcher">
+      <button class="theme-button" data-theme="light">Light</button>
+      <button class="theme-button" data-theme="earthy">Earthy</button>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="page-header">
+      <h1>Contact Us</h1>
+      <p>
+        Share a few details about your project and the best way to reach you.
+      </p>
+    </section>
+
+    <section class="section">
+      <div class="grid grid-2">
+        <div class="card">
+          <h2>Get in Touch</h2>
+          <p>
+            Phone: <a href="tel:+15555550123">+1 (555) 555-0123</a><br />
+            Email: <a href="mailto:info@greenlinehomes.com">info@greenlinehomes.com</a>
+          </p>
+          <p>
+            Service Area: Your City and surrounding communities.
+          </p>
+          <p class="small">
+            For now, this form can send an email or be wired to a form service
+            (Formspree, Netlify Forms, etc.) when you are ready.
+          </p>
+        </div>
+
+        <form class="card form" method="post" action="#">
+          <h2>Project Inquiry</h2>
+          <label class="field">
+            <span>Name</span>
+            <input type="text" name="name" placeholder="Your full name" />
+          </label>
+          <label class="field">
+            <span>Email</span>
+            <input type="email" name="email" placeholder="you@example.com" />
+          </label>
+          <label class="field">
+            <span>Phone</span>
+            <input type="tel" name="phone" placeholder="(555) 555-0123" />
+          </label>
+          <label class="field">
+            <span>Project Type</span>
+            <select name="project_type">
+              <option value="">Select one</option>
+              <option>New home construction</option>
+              <option>Remodel / renovation</option>
+              <option>Addition</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Message</span>
+            <textarea name="message" rows="4" placeholder="Share a few details about your project, timeline, and budget range."></textarea>
+          </label>
+          <button type="submit" class="btn primary">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div>
+        <h4>Greenline Homes</h4>
+        <p>Custom home construction and remodeling.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href="tel:+15555550123">+1 (555) 555-0123</a></p>
+        <p><a href="mailto:info@greenlinehomes.com">info@greenlinehomes.com</a></p>
+      </div>
+      <div>
+        <h4>Service Area</h4>
+        <p>Your City, Nearby Towns & Surrounding Communities</p>
+      </div>
+    </div>
+    <p class="footer-bottom">
+      © <span id="year"></span> Greenline Homes. All rights reserved.
+    </p>
+  </footer>
+
+  <script src="js/theme.js"></script>
+</body>
+</html>
