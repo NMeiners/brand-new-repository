@@ -1,53 +1,133 @@
-<html>
-  <head>
-    <title>Random Number Generator</title>
-    <!-- Replace the content in the following line with your name. -->
-    <meta name="author" content="Nathan Meiners">
-    <style>
-      body {
-        background-color: darkslategray;
-        color: white;
-      }
-      a:link, a:visited {
-        color: lightgoldenrodyellow;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>CS 39AF - Nathan Meiners Web page Project</h1>
-    <a href="https://github.com/NMeiners/brand-new-repository" target="_blank">Click here to visit the repository.</a>
-    <h3>Select range</h3>
-    <form id="range">
-      <!-- minimum input-->
-      <label for="min">Minimum</label>
-      <input type="number" id="min" name="min"><br><br>
-      <!--maximum input-->
-      <label for="max">Maximum</label>
-      <input type="number" id="max" name="max"><br><br>
-    </form>
-    <!--generate button-->
-    <button type="button" onclick="
-      document.getElementById('output').innerHTML =
-      generate(document.getElementById('min').value, document.getElementById('max').value)">
-      Generate</button>
-    <p id="output"></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Greenline Homes – Custom Home Construction</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link id="themeStylesheet" rel="stylesheet" href="css/theme-light.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-mark">GH</span>
+      <div class="brand-text">
+        <span class="brand-name">Greenline Homes</span>
+        <span class="brand-tagline">Custom Home Construction</span>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="theme-switcher">
+      <button class="theme-button" data-theme="light">Light</button>
+      <button class="theme-button" data-theme="earthy">Earthy</button>
+    </div>
+  </header>
 
-    <script>
-        function generate(minimum, maximum){
-          var min = Number(minimum)
-          var max = Number(maximum)
-          let output = "";
-          try {
-            if (!(Number.isInteger(min))) throw "The mimimum must be an integer.";
-            if (!(Number.isInteger(max))) throw "The maximum must be an integer.";
-            if (min > max) throw "The mimimum must be less than the maximum.";
-            output = String(Math.floor(Math.random() * (max - min + 1)) + min);
-          } catch (err) {
-            output = err;
-          } finally {
-            return output;
-          }
-        }
-      </script>
-  </body>
+  <main class="page">
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Homes Built to Last, Designed for Living</h1>
+        <p>
+          Greenline Homes specializes in quality residential construction,
+          thoughtful layouts, and energy-conscious builds for families in your area.
+        </p>
+        <div class="hero-actions">
+          <a href="contact.html" class="btn primary">Request a Consultation</a>
+          <a href="projects.html" class="btn secondary">View Recent Projects</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h2>Why Choose Us</h2>
+        <ul>
+          <li>Licensed, insured, and experienced</li>
+          <li>Transparent budgets and timelines</li>
+          <li>Custom designs and turn-key builds</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <header class="section-header">
+        <h2>What We Do</h2>
+        <p>From bare lot to finished home, we manage every stage of construction.</p>
+      </header>
+      <div class="grid grid-3">
+        <article class="card">
+          <h3>New Home Construction</h3>
+          <p>
+            Ground-up builds tailored to your lot, budget, and design priorities.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Remodels & Additions</h3>
+          <p>
+            Kitchen, bath, and whole-home renovations that respect your existing space.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Project Management</h3>
+          <p>
+            Coordination with architects, engineers, and trades for a smooth build.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section highlight">
+      <header class="section-header">
+        <h2>Available Lots & Builds</h2>
+        <p>
+          Planning to offer move-in-ready homes or model projects? Use this area to feature them.
+        </p>
+      </header>
+      <div class="grid grid-3">
+        <article class="card muted">
+          <h3>Future Listing Placeholder</h3>
+          <p>
+            Showcase lot size, location, square footage, and key features here.
+          </p>
+        </article>
+        <article class="card muted">
+          <h3>Future Listing Placeholder</h3>
+          <p>
+            Include a short description, price range, and estimated completion date.
+          </p>
+        </article>
+        <article class="card muted">
+          <h3>Future Listing Placeholder</h3>
+          <p>
+            Add gallery links and floor plans once you have them ready.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div>
+        <h4>Greenline Homes</h4>
+        <p>Custom home construction and remodeling.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href="tel:+15555550123">+1 (555) 555-0123</a></p>
+        <p><a href="mailto:info@greenlinehomes.com">info@greenlinehomes.com</a></p>
+      </div>
+      <div>
+        <h4>Service Area</h4>
+        <p>Your City, Nearby Towns & Surrounding Communities</p>
+      </div>
+    </div>
+    <p class="footer-bottom">
+      © <span id="year"></span> Greenline Homes. All rights reserved.
+    </p>
+  </footer>
+
+  <script src="js/theme.js"></script>
+</body>
 </html>
