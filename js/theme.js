@@ -7,6 +7,11 @@
     blueOrange: "css/theme-blue-orange.css",
     redWhite: "css/theme-red-white.css",
     blueGreen: "css/theme-blue-green.css",
+    concreteSteeel: "css/theme-concrete-steel.css",
+    woodlandNatural: "css/theme-woodland-natural.css",
+    blueprintTechnical: "css/theme-blueprint-technical.css",
+    clayStone: "css/theme-clay-stone.css",
+    solarModern: "css/theme-solar-modern.css",
   };
 
 
