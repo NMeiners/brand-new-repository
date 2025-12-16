@@ -4,7 +4,7 @@
   --color-bg: #020617;
   --color-surface: #020617;
   --color-surface-muted: #0f172a;
-  --color-primary: #1d4ed8; /* royal blue */
+  --color-primary: #2563eb; /* slightly lighter royal blue */
   --color-primary-soft: #111827;
   --color-text: #f9fafb;
   --color-text-soft: #cbd5f5;
@@ -19,20 +19,21 @@
     sans-serif;
 
   /* Theme-specific color overrides */
-  --bg-gradient: radial-gradient(circle at top left, #1a1625 0, rgba(249,115,22,0.04) 20%, #020617 50%, #000000 100%);
-  --header-bg: rgba(2, 6, 23, 0.95);
-  --brand-gradient: linear-gradient(135deg, var(--color-primary) 30%, var(--color-accent));
+  --bg-gradient: radial-gradient(circle at top left, #0f0c12 0%, rgba(249,115,22,0.12) 18%, #07090d 45%, #020617 75%, #000000 100%);
+  --header-bg: linear-gradient(180deg, rgba(2,6,23,0.99), rgba(2,6,23,0.98));
+  --brand-gradient: linear-gradient(135deg, var(--color-primary) 30%, var(--color-accent) 70%);
   --brand-text-color: #ffffff;
-  --button-bg: linear-gradient(90deg, var(--color-primary), var(--color-accent));
-  --hero-card-bg: linear-gradient(145deg, rgba(29,78,216,0.12), rgba(249,115,22,0.08), #111827);
-  --hero-card-border: rgba(249, 115, 22, 0.55);
+  --button-bg: linear-gradient(90deg, var(--color-accent), var(--color-primary));
+  --btn-primary-bg: var(--color-accent);
+  --hero-card-bg: linear-gradient(145deg, rgba(37,99,235,0.08), rgba(249,115,22,0.36), #0c0f14);
+  --hero-card-border: rgba(249, 115, 22, 0.9);
   --card-border: rgba(31, 41, 55, 0.8);
-  --placeholder-bg: linear-gradient(135deg, #1e3a5f, #f97316);
+  --placeholder-bg: linear-gradient(135deg, #f97316, #1e3a5f);
   --btn-primary-text: #ffffff;
-  --btn-primary-hover-bg: linear-gradient(90deg, var(--color-primary), var(--color-accent));
-  --btn-secondary-bg: #0f172a;
-  --form-focus-outline: 2px solid rgba(249, 115, 22, 0.6);
-  --footer-bg: rgba(2, 6, 23, 0.98);
+  --btn-primary-hover-bg: linear-gradient(90deg, #d97706, var(--color-primary));
+  --btn-secondary-bg: linear-gradient(90deg, rgba(249,115,22,0.18), #0f172a);
+  --form-focus-outline: 2px solid rgba(249, 115, 22, 0.85);
+  --footer-bg: linear-gradient(180deg, rgba(2,6,23,0.99), rgba(2,6,23,0.98));
 }
 
 
