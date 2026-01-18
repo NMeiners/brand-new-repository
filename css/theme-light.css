@@ -1,14 +1,14 @@
 @import url("theme-base.css");
 
 :root {
-  --color-bg: #f5f7fb;
+  --color-bg: #64748b;
   --color-surface: #ffffff;
-  --color-surface-muted: #e6ebf5;
+  --color-surface-muted: #cbd5e1;
   --color-primary: #1e88e5;
   --color-primary-soft: #e3f2fd;
   --color-text: #1e293b;
   --color-text-soft: #64748b;
-  --color-border: #d0d7e2;
+  --color-border: #cbd5e1;
   --color-accent: #16a34a;
   --radius-sm: 6px;
   --radius-md: 10px;
@@ -19,19 +19,19 @@
     sans-serif;
 
   /* Theme-specific color overrides */
-  --bg-gradient: radial-gradient(circle at top left, #e3f2fd 0, #f5f7fb 40%, #ffffff 100%);
+  --bg-gradient: linear-gradient(135deg, #64748b 0%, #475569 100%);
   --header-bg: rgba(255, 255, 255, 0.9);
   --brand-gradient: linear-gradient(135deg, var(--color-primary), var(--color-accent));
   --brand-text-color: #ffffff;
   --button-bg: #fff;
-  --hero-card-bg: linear-gradient(145deg, #ffffff, var(--color-primary-soft));
+  --hero-card-bg: linear-gradient(145deg, #ffffff, #f9fafb);
   --hero-card-border: rgba(30, 136, 229, 0.15);
-  --card-border: rgba(148, 163, 184, 0.3);
-  --placeholder-bg: linear-gradient(135deg, #e0e7ff, #fef9c3);
+  --card-border: rgba(203, 213, 225, 0.5);
+  --placeholder-bg: linear-gradient(135deg, #64748b, #475569);
   --btn-primary-text: #ffffff;
-  --btn-primary-hover-bg: #1565c0;
+  --btn-primary-hover-bg: #15803d;
   --btn-secondary-bg: #ffffff;
-  --form-focus-outline: 2px solid rgba(30, 136, 229, 0.25);
+  --form-focus-outline: 2px solid rgba(22, 163, 74, 0.25);
   --footer-bg: rgba(248, 250, 252, 0.95);
 }
 

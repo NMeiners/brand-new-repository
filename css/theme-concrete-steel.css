@@ -1,36 +1,36 @@
 @import url("theme-base.css");
 
 :root {
-  --color-bg: #2a2d31;
-  --color-surface: #3d414a;
-  --color-surface-muted: #505459;
+  --color-bg: #d4d4d8;
+  --color-surface: #ffffff;
+  --color-surface-muted: #e4e4e7;
   --color-primary: #4682b4; /* steel blue */
   --color-primary-soft: #36526b;
-  --color-text: #f0f0f0;
-  --color-text-soft: #bfbfbf;
-  --color-border: #505459;
-  --color-accent: #6e7173; /* slate gray */
+  --color-text: #1f2937;
+  --color-text-soft: #6b7280;
+  --color-border: #d4d4d8;
+  --color-accent: #4ade80; /* green accent */
   --radius-sm: 6px;
   --radius-md: 10px;
   --radius-lg: 16px;
-  --shadow-soft: 0 20px 40px rgba(0, 0, 0, 0.6);
-  --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.8);
+  --shadow-soft: 0 20px 40px rgba(0, 0, 0, 0.1);
+  --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.05);
   --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
 
   /* Theme-specific color overrides */
-  --bg-gradient: radial-gradient(circle at top left, #3d414a 0, #2a2d31 50%, #1a1c20 100%);
-  --header-bg: rgba(26, 28, 32, 0.98);
+  --bg-gradient: linear-gradient(135deg, #d4d4d8 0%, #e4e4e7 100%);
+  --header-bg: rgba(255, 255, 255, 0.95);
   --brand-gradient: linear-gradient(135deg, var(--color-primary), var(--color-accent));
   --brand-text-color: #ffffff;
-  --button-bg: #3d414a;
-  --hero-card-bg: linear-gradient(145deg, #3d414a, #2f3238);
-  --hero-card-border: rgba(70, 130, 180, 0.3);
-  --card-border: rgba(80, 84, 89, 0.9);
-  --placeholder-bg: linear-gradient(135deg, #36526b, #5a5a5a);
+  --button-bg: #ffffff;
+  --hero-card-bg: linear-gradient(145deg, #ffffff, #f9fafb);
+  --hero-card-border: rgba(70, 130, 180, 0.2);
+  --card-border: rgba(212, 212, 216, 0.6);
+  --placeholder-bg: linear-gradient(135deg, #e3f2fd, #f0fdf4);
   --btn-primary-text: #ffffff;
   --btn-primary-hover-bg: #5a9fd4;
-  --btn-secondary-bg: #3d414a;
+  --btn-secondary-bg: #e4e4e7;
   --form-focus-outline: 2px solid rgba(70, 130, 180, 0.4);
-  --footer-bg: rgba(26, 28, 32, 0.99);
+  --footer-bg: rgba(255, 255, 255, 0.9);
 }
